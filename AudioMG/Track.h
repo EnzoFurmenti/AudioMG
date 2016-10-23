@@ -10,4 +10,8 @@
 
 @interface Track : NSObject
 
+@property (nonatomic,strong) NSString *artist;
+@property (nonatomic,strong) NSString *title;
+@property (nonatomic,assign) NSInteger duration;
+@property (nonatomic,strong) NSString *url;
 @end

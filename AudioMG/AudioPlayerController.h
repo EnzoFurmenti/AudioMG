@@ -7,15 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AudioPlayer.h"
 
-@class AVAudioPlayer;
+
 
 @interface AudioPlayerController : UIViewController
 
-@property(nonatomic,strong) AVAudioPlayer* audioPlayer;
+
 @property (nonatomic,strong) UILabel* trackTitle;
+@property (nonatomic,strong) AudioPlayer* player;
+@property (nonatomic,strong) NSString* audioTitle;
+@property (nonatomic,strong) NSString* artist;
 
 
--(instancetype)initWithFilePath:(NSURL*)fileURL;
+
+
+-(instancetype)initWithPlayer:(AudioPlayer*)audioPlayer;
 
 @end

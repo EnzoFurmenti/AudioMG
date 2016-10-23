@@ -8,6 +8,15 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface AudioPlayer : AVAudioPlayer
+@interface AudioPlayer : NSObject
+
+@property (nonatomic,strong) NSString *titleTrack;
+@property (nonatomic,strong) NSString *artist;
+@property (nonatomic,strong) AVAudioPlayer *audioPlayer;
+@property (nonatomic,strong) NSURL *url;
+
+
+-(instancetype)initWithContentsOfURL:(NSURL*)url;
+-(instancetype)initWithData:(NSData*)data;
 
 @end

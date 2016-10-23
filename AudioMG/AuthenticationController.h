@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AuthenticationController : UIWebView
+@class AccessToken;
+
+typedef void(^AuthenticationCompletionBlock)(AccessToken* token);
+
+
+
+@interface AuthenticationController : UIViewController
+
+@property (nonatomic,strong) UIWebView *webView;
+
+
+
+
+-(id)initWithCompletionBlock:(AuthenticationCompletionBlock) completionBlock;
 
 @end

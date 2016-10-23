@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AudioTableViewController : UITableViewController
+@interface AudioTableViewController : UIViewController
+
+
+-(void)autorizeScreen;
 
 @end
