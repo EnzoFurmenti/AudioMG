@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AudioTableViewController.h
 //  AudioMG
 //
 //  Created by EnzoF on 15.10.16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AudioTableViewController : UITableViewController
 
 @end
-
